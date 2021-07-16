@@ -1,0 +1,31 @@
+#303030
+#555555
+#FF6C00
+#FFFFFF
+#9DA4BD
+
+:root{
+    --primary-color: #FF6C00;
+    --secondary-color: #191c26;
+
+    --text-primary: #303030;
+    --text-secondary: #9DA4BD;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 400;
+}
+
+h2.section-title {
+    color: var(--text-primary);
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+h2.section-title.lighten {
+    color: #FFFFFF;
+}
