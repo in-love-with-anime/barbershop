@@ -12,9 +12,10 @@
 </head>
 <body>
 
+    <!-- Шапка сайта -->
     <header class="header">
 
-        <!-- Navbar -->
+        <!-- Навигация -->
         <nav class="navbar">
             <img src="./images/logo.svg" alt="Имя компании" class="logo">
             <ul class="nav-links">
@@ -23,12 +24,13 @@
                 <li><a href="#" class="nav-link" >Мастера</a></li>
                 <li><a href="#" class="nav-link" >Контакты</a></li>
             </ul>
-            <div>
+            <div class="contact-box">
                 <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
                 <a href="#footer" class="primary-btn">Онлайн запись</a>
             </div>
         </nav>
 
+        <!-- Боковая панель -->
         <aside class="sidebar">
             <div class="social-box">
                 <a href="#" class="social-link">Instragram</a>
@@ -36,6 +38,7 @@
             </div>
         </aside>
 
+        <!-- Слайдер -->
         <div class="slider">
             <div class="slide">
                 <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
@@ -59,6 +62,7 @@
 
     </header>
 
+    <!-- Уникальный контент страницы -->
     <main class="layout">
         
         <!-- О нас -->
@@ -83,7 +87,7 @@
             <span class="suptitle-secondary">Проведи время в компании лучших мастеров</span>
             <h2 class="section-title lighten">Услуги и цены</h2>
             <div class="price-box">
-                <ul class="plice-list">
+                <ul class="price-list">
                     <li class="price-item">
                         <p>Мужская стрижка</p>
                         <span>от 300 грн.</span>
@@ -101,7 +105,7 @@
                         <span>от 200 грн.</span>
                     </li>
                 </ul>
-                <ul class="plice-list">
+                <ul class="price-list">
                     <li class="price-item">
                         <p>Cтрижка у стажера</p>
                         <span>от 50 грн.</span>
@@ -124,8 +128,28 @@
         </section>
 
         <!-- Почему именно мы -->
-        <section class="section-box" id="">
+        <section class="section-box" id="why-section">
+            <div class="number-conainer">
 
+                <div class="number-box">
+                    <p>600</p>
+                    <span>Довольных клиентов в день</span>
+                </div>
+                <div class="number-box">
+                    <p>50</p>
+                    <span>Наград за отличный сервис</span>
+                </div>
+
+                <div class="number-box">
+                    <p>20</p>
+                    <span>Лучших мастеров Киева</span>
+                </div>
+
+                <div class="number-box">
+                    <p>100</p>
+                    <span>Подарков постоянным клиентам</span>
+                </div>
+            </div>
         </section>
 
         <!-- Наши мастера -->
@@ -133,17 +157,19 @@
             <span class="suptitle-primary">Для настоящих ценителей атмосферы</span>
             <h2 class="section-title lighten">Наши мастера</h2>
             <ul>
-                <li>
+                <li class="master-card">
                     <img src="./images/master1.jpg" alt="Мастер бреет голову">
                     <h4>John Smith</h4>
                     <p>Extreme Barber</p>
                 </li>
-                <li>
+
+                <li class="master-card">
                     <img src="./images/master2.jpg" alt="Мастер осматриваеь волосы">
                     <h4>Michele Doe</h4>
                     <p>Extreme Barber</p>
                 </li>
-                <li>
+                
+                <li class="master-card">
                     <img src="./images/master3.jpg" alt="Мастер стрижет челку">
                     <h4>Alan Black</h4>
                     <p>Extreme Barber</p>
@@ -154,7 +180,7 @@
         <!-- Портфолио -->
         <section class="section-box" id="">
             <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
-            <div>
+            <div class="image-gallery">
                 <img src="./images/portfolio1.jpg" alt="Стрижка волос" width="270" height="360">
                 <img src="./images/portfolio2.jpg" alt="Бритье" width="270" height="360">
                 <img src="./images/portfolio3.jpg" alt="Массаж тёплым полотенцем" width="270" height="360">
@@ -163,6 +189,7 @@
         </section>
     </main>
 
+    <!-- Футер -->
     <footer class="footer" id="footer">
         <div>
             <h2 class="section-title">Онлайн-запись</h2>
