@@ -20,13 +20,14 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 400;
 }
 
 ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -34,25 +35,59 @@ a {
     text-decoration: none;
 }
 
-button {
+/* button {
     font-family: inherit;
     cursor: pointer;
-}
+} */
 
-img {
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
+} */
+
+/* Шапка сайта */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100vh;
 }
 
 /* Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 30px 55px 0;
+    position: fixed;
+    top: 0px;   
+
+    box-sizing: border-box;
+}
+
+.nav-holder {
+    display: flex;
+    align-self: center;
+
+    height: 56px;
+}
+
+.logo-img {
+    width:  68px;
+    height: 56px;
+    margin: 0 32px;
+}
+
 .nav-links {
-    display: inline-block;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline-block;
-    background-color: lightskyblue;
+    margin: 0 40px;
 }
 
 a.nav-link {
@@ -69,10 +104,12 @@ a.nav-link:hover, a.nav-link:focus {
 }
 
 .contact-box {
-    display: inline-block;
+    
 }
 
 .primary-btn { 
+    display: inline-block;
+
     padding: 12px 20px;
 
     font-weight: 600;
@@ -81,13 +118,20 @@ a.nav-link:hover, a.nav-link:focus {
     letter-spacing: 0.09em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
 
     border: 1px solid var(--primary-color);
     border-radius: 25px;
 }
 
 /* Боковая панель */
+.sidebar {    
+    width: 155px;
+    height: 100vh;
+
+    background-color: #ffffff;
+}
+
 .social-box
 
 .social-link {
@@ -97,10 +141,10 @@ a.nav-link:hover, a.nav-link:focus {
     letter-spacing: 0.2em;
 
     color: var(--text-primary);
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
 }
 
-.social-link:hover, .social-link:focus {
+a.social-link:hover, a.social-link:focus {
     color: var(--primary-color);
 }
 
@@ -125,6 +169,23 @@ a.nav-link:hover, a.nav-link:focus {
     color: rgba(157, 164, 189, 0.6); 
 }
 
+.suptitle-primary::before, 
+.suptitle-secondary::before {
+    display: inline-block;
+    content: '';
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+   
+        
+    background-color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-primary::before{
+    background-color: rgba(48, 48, 48, 1);
+}
+
 .hero-description {
     font-size: 18px;
     line-height: 1.66;
@@ -133,8 +194,43 @@ a.nav-link:hover, a.nav-link:focus {
     color: var(--text-secondary);
 }
 
+.slider {
+    width: calc(100% - 155px);
+    background-image: url(../images/Slider1.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+/* Уникальный контент страницы */
+
+.section-box {
+    padding: 130px 55px;
+
+    width: 100%;
+}
 
 /* О нас */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image-box {
+    display: flex;
+    justify-content: space-between;
+
+    width: 48%;
+}
+
+.about-image-box img{
+    width: 48%;
+}
+
+.description-container {
+    width: 48%;
+}
 
 h2.section-title {
     font-family: Raleway;
@@ -146,31 +242,10 @@ h2.section-title {
 }
 
 h2.section-title.lighten {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.primary-btn.darken {
-    color: var(--text-primary);
-}
-
-/* Услуги и цены */
-
-.price-list {
-    display: inline-block;
-}
-
-.price-item p, .price-item span {
-    display: inline-block;
-
-    font-size: 18px;
-    line-height: 1.66;
-    letter-spacing: 0.02em;
-
-    color: var(--text-secondary);
-}
-
-/* Почему именно мы */
-.section-description {
+p.section-description {
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
@@ -179,19 +254,59 @@ h2.section-title.lighten {
 }
 
 
-/* Почему именно мы */
-.number-box {
-    display: inline-block;
-    width: 170px;
-    height: 133px;
-    padding: 20px 24px;
-    text-align: center;
+.primary-btn.darken {
+    color: var(--text-primary);
+}
 
+/* Услуги и цены */
+
+.price-list {
+    display: flex;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}   
+
+.price-item p, .price-item span {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+
+    color: var(--text-secondary);
+}
+
+
+/* Почему именно мы */
+
+.why-section {
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.number-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 48%;
+    padding: 0 100px;
+}
+
+.number-box {
+    min-width: 170px;
+    width: 48%;
+    height: 132px;
+    margin-top: 30px;
+    
     background-color: #F7F7F7;
 }
 
 .number-box p {
     display: block;
+    text-align: center;
 
     font-weight: 700;
     font-size: 42px;
@@ -202,7 +317,8 @@ h2.section-title.lighten {
 }
 
 .number-box span {
-    display: inline-block;
+    display: block;
+    text-align: center;
 
     font-weight: 600;
     font-size: 11px;
@@ -213,10 +329,14 @@ h2.section-title.lighten {
 }
 
 /* Наши мастера */
-/* text-align: center; */
 
+.masters-list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 300px;
+}
 
-.master-card h4 {
+.master-card p {
     font-size: 18px;
     line-height: 1.38;
     letter-spacing: 0.02em;
@@ -224,7 +344,7 @@ h2.section-title.lighten {
     color: var(--text-primary);
 }
 
-.master-card p {
+.master-card span {
     
     font-size: 14px;
     line-height: 1.357;
@@ -236,13 +356,16 @@ h2.section-title.lighten {
 
 /* Подвал страницы */
 
-address {
-    font-style: normal;
+.footer-contacts {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.66;
     letter-spacing: 0.02em;
     
     color: var(--text-secondary); 
+}
+
+address a {
+    font-style: normal;
 }
 
 address a {

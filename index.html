@@ -17,17 +17,22 @@
 
         <!-- Навигация -->
         <nav class="navbar">
-            <img src="./images/logo.svg" alt="Имя компании" class="logo">
-            <ul class="nav-links">
-                <li><a href="#about-section" class="nav-link" >О нас</a></li>
-                <li><a href="#price-section" class="nav-link" >Услуги и цены</a></li>
-                <li><a href="#" class="nav-link" >Мастера</a></li>
-                <li><a href="#" class="nav-link" >Контакты</a></li>
-            </ul>
+            
+            <div class="nav-holder">
+                <img src="./images/logo.svg" alt="Имя компании" class="logo-img">
+                <ul class="nav-links">
+                    <li><a href="#about-section" class="nav-link" >О нас</a></li>
+                    <li><a href="#price-section" class="nav-link" >Услуги и цены</a></li>
+                    <li><a href="#" class="nav-link" >Мастера</a></li>
+                    <li><a href="#" class="nav-link" >Контакты</a></li>
+                </ul>
+            </div>
+
             <div class="contact-box">
                 <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
                 <a href="#footer" class="primary-btn">Онлайн запись</a>
             </div>
+
         </nav>
 
         <!-- Боковая панель -->
@@ -66,12 +71,14 @@
     <main class="layout">
         
         <!-- О нас -->
-        <section class="section-box" id="about-section">
-            <div class="about_image-box">
-                <img src="./images/about1.jpg" alt="Намазываем пеной" width="270" height="445">
-                <img src="./images/about2.jpg" alt="А потом вот так опасной бритвой бреем" width="270" height="445">
+        <section class="section-box about-section" id="about-section">
+            
+            <div class="about-image-box">
+                <img src="./images/about1.jpg" alt="Намазываем пеной">
+                <img src="./images/about2.jpg" alt="А потом вот так опасной бритвой бреем">
             </div>
-            <div>
+            
+            <div class="description-container">
                 <span class="suptitle-primary">О нас</span>
                 <h2 class="section-title">Лучший Барбершоп твоего города</h2>
                 <h3 class="section-subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
@@ -80,61 +87,77 @@
                     то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
                 <a href="#footer" class="primary-btn darken">Онлайн запись</a>
             </div>
+            
         </section>
 
         <!-- Услуги и цены -->
         <section class="section-box" id="price-section">
             <span class="suptitle-secondary">Проведи время в компании лучших мастеров</span>
             <h2 class="section-title lighten">Услуги и цены</h2>
+
             <div class="price-box">
+                
                 <ul class="price-list">
+
                     <li class="price-item">
                         <p>Мужская стрижка</p>
                         <span>от 300 грн.</span>
                     </li>
+
                     <li class="price-item">
                         <p>Стрижка бороды</p>
                         <span>от 300 грн.</span>
                     </li>
+
                     <li class="price-item">
                         <p>Стрижка усов</p>
                         <span>от 200 грн.</span>
                     </li>
+
                     <li class="price-item">
                         <p>Бритье опасной бритвой</p>
                         <span>от 200 грн.</span>
                     </li>
+
                 </ul>
+
                 <ul class="price-list">
+
                     <li class="price-item">
                         <p>Cтрижка у стажера</p>
                         <span>от 50 грн.</span>
                     </li>
+
                     <li class="price-item">
                         <p>Стрижка под насадку</p>
                         <span>от 200 грн.</span>
                     </li>
+
                     <li class="price-item">
                         <p>Детская стрижка (до 12 лет)</p>
                         <span>от 300 грн.</span>
                     </li>
+
                     <li class="price-item">
                         <p>Камуфлирование седины</p>
                         <span>от 200 грн.</span>
                     </li>
+
                 </ul>
             </div>
+
             <a href="#footer" class="primary-btn">Онлайн запись</a>
         </section>
 
         <!-- Почему именно мы -->
-        <section class="section-box" id="why-section">
-            <div class="number-conainer">
+        <section class="section-box why-section" id="why-section">
+            <div class="number-container">
 
                 <div class="number-box">
                     <p>600</p>
                     <span>Довольных клиентов в день</span>
                 </div>
+
                 <div class="number-box">
                     <p>50</p>
                     <span>Наград за отличный сервис</span>
@@ -156,36 +179,40 @@
         <section class="section-box" id="">
             <span class="suptitle-primary">Для настоящих ценителей атмосферы</span>
             <h2 class="section-title lighten">Наши мастера</h2>
-            <ul>
+
+            <ul class="masters-list">
                 <li class="master-card">
                     <img src="./images/master1.jpg" alt="Мастер бреет голову">
-                    <h4>John Smith</h4>
-                    <p>Extreme Barber</p>
+                    <p>John Smith</p>
+                    <span>Extreme Barber</span>
                 </li>
 
                 <li class="master-card">
                     <img src="./images/master2.jpg" alt="Мастер осматриваеь волосы">
-                    <h4>Michele Doe</h4>
-                    <p>Extreme Barber</p>
+                    <p>Michele Doe</p>
+                    <span>Extreme Barber</span>
                 </li>
                 
                 <li class="master-card">
                     <img src="./images/master3.jpg" alt="Мастер стрижет челку">
-                    <h4>Alan Black</h4>
-                    <p>Extreme Barber</p>
+                    <p>Alan Black</p>
+                    <span>Extreme Barber</span>
                 </li>
             </ul>
+
         </section>
 
         <!-- Портфолио -->
         <section class="section-box" id="">
             <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
+
             <div class="image-gallery">
                 <img src="./images/portfolio1.jpg" alt="Стрижка волос" width="270" height="360">
                 <img src="./images/portfolio2.jpg" alt="Бритье" width="270" height="360">
                 <img src="./images/portfolio3.jpg" alt="Массаж тёплым полотенцем" width="270" height="360">
                 <img src="./images/portfolio4.jpg" alt="Бритьё опасной бритвой" width="270" height="360">
             </div>
+
         </section>
     </main>
 
@@ -198,7 +225,7 @@
             </form>
         </div>
 
-        <div>
+        <div class="footer-contacts">
             <h2 class="section-title">Контакты</h2>
             <div class="contact-box">
                 <address>
