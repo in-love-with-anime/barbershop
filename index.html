@@ -19,7 +19,9 @@
         <nav class="navbar">
             
             <div class="nav-holder">
-                <img src="./images/logo.svg" alt="Имя компании" class="logo-img">
+                <svg class="logo-icon" wigth="68" height="56">
+                    <use href="./images/sprite.svg#icon-logo" alt="Имя компании"></use>
+                </svg>
                 <ul class="nav-links">
                     <li><a href="#about-section" class="nav-link" >О нас</a></li>
                     <li><a href="#price-section" class="nav-link" >Услуги и цены</a></li>
@@ -91,7 +93,7 @@
         </section>
 
         <!-- Услуги и цены -->
-        <section class="section-box" id="price-section">
+        <section class="section-box price-section" id="price-section">
             <span class="suptitle-secondary">Проведи время в компании лучших мастеров</span>
             <h2 class="section-title lighten">Услуги и цены</h2>
 
@@ -176,27 +178,114 @@
         </section>
 
         <!-- Наши мастера -->
-        <section class="section-box" id="">
+        <section class="masters section-box" id="">
             <span class="suptitle-primary">Для настоящих ценителей атмосферы</span>
-            <h2 class="section-title lighten">Наши мастера</h2>
+            <h2 class="section-title">Наши мастера</h2>
 
             <ul class="masters-list">
                 <li class="master-card">
                     <img src="./images/master1.jpg" alt="Мастер бреет голову">
-                    <p>John Smith</p>
-                    <span>Extreme Barber</span>
+                    
+                    <div class="masters-content">
+                        <p>John Smith</p>
+                        <span>Extreme Barber</span>
+
+                        <div class="master-social-box">
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </li>
 
                 <li class="master-card">
                     <img src="./images/master2.jpg" alt="Мастер осматриваеь волосы">
-                    <p>Michele Doe</p>
-                    <span>Extreme Barber</span>
+                    
+                    <div class="masters-content">
+                        <p>Michele Doe</p>
+                        <span>Extreme Barber</span>
+
+                        <div class="master-social-box">
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </li>
                 
                 <li class="master-card">
                     <img src="./images/master3.jpg" alt="Мастер стрижет челку">
-                    <p>Alan Black</p>
-                    <span>Extreme Barber</span>
+                    
+                    <div class="masters-content">
+                        <p>Alan Black</p>
+                        <span>Extreme Barber</span>
+
+                        <div class="master-social-box">
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="link">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </li>
             </ul>
 
@@ -204,7 +293,7 @@
 
         <!-- Портфолио -->
         <section class="section-box" id="">
-            <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
+            <span class="portfolio suptitle-primary">На латинском языке “барба” означает “борода”</span>
 
             <div class="image-gallery">
                 <img src="./images/portfolio1.jpg" alt="Стрижка волос" width="270" height="360">

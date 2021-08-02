@@ -40,11 +40,11 @@ a {
     cursor: pointer;
 } */
 
-/* img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-} */
+}
 
 /* Шапка сайта */
 
@@ -76,10 +76,12 @@ a {
     height: 56px;
 }
 
-.logo-img {
+.logo-icon {
     width:  68px;
     height: 56px;
     margin: 0 32px;
+
+    fill: var(--text-primary);
 }
 
 .nav-links {
@@ -96,7 +98,7 @@ a.nav-link {
     line-height: 1.33;
     letter-spacing: 0.1em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 a.nav-link:hover, a.nav-link:focus {
@@ -155,6 +157,7 @@ a.social-link:hover, a.social-link:focus {
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
 
     color: var(--text-primary);
 }
@@ -198,6 +201,7 @@ a.social-link:hover, a.social-link:focus {
     width: calc(100% - 155px);
     background-image: url(../images/Slider1.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -259,9 +263,30 @@ p.section-description {
 }
 
 /* Услуги и цены */
+.price-section {
+    background-image: url(../images/price-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #111319;;
+}
+
+.price-box {
+    display: flex;
+}
 
 .price-list {
     display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    padding: 30px 40px;
+}
+
+.price-list:nth-child(odd) {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list:nth-child(even) {
+    background:  linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .price-item {
@@ -272,6 +297,8 @@ p.section-description {
 }   
 
 .price-item p, .price-item span {
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
@@ -279,6 +306,10 @@ p.section-description {
     color: var(--text-secondary);
 }
 
+/* .price-section .primary-btn {
+    display: flex;
+    justify-content: center;
+} */
 
 /* Почему именно мы */
 
@@ -329,6 +360,9 @@ p.section-description {
 }
 
 /* Наши мастера */
+.masters.section-box {
+    background-color: #F7F7F7;
+}
 
 .masters-list {
     display: flex;
@@ -336,7 +370,15 @@ p.section-description {
     flex-basis: 300px;
 }
 
+.masters-content {
+    padding: 30px 82px 0;
+    text-align: center;
+}
+
 .master-card p {
+    margin-top: 0;
+    margin-bottom: 8px;
+
     font-size: 18px;
     line-height: 1.38;
     letter-spacing: 0.02em;
@@ -345,12 +387,51 @@ p.section-description {
 }
 
 .master-card span {
-    
+    display: inline-block;
+    margin-bottom: 30px;
+
     font-size: 14px;
     line-height: 1.357;
     letter-spacing: 0.02em;
     
     color: var(--primary-color);
+}
+
+.master-social-box {
+    display: flex;
+    padding: 0;
+    margin: 0;    
+}
+
+.master-social-box .link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.master-social-box .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+     
+    fill: var(--text-primary);
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.master-social-box .link:hover, .master-social-box .link:focus {
+    fill: var(--primary-color);
+}
+
+/* Портфолио */
+.portfolio.suptitle-primary {
+    display: inline-block;
+    margin-bottom: 44px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
 }
 
 
