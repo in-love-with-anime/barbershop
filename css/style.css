@@ -121,6 +121,7 @@ a.nav-link:hover, a.nav-link:focus {
     text-transform: uppercase;
 
     color: #ffffff;
+    background-color: transparent;
 
     border: 1px solid var(--primary-color);
     border-radius: 25px;
@@ -436,22 +437,80 @@ p.section-description {
 
 
 /* Подвал страницы */
+.footer {
+    display: flex;
+
+    width: 100%;
+    min-height: 640px;
+    height: auto;
+    padding: 0 55px;
+
+    background-color: var(--secondary-color);
+    background-image: url('../images/footer-background.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.footer-form, .footer-contacts {
+    width: 50%;
+    height: inherit;
+}
+
+/* Форма Онлайн-записи */
+.footer-form {
+    margin-right: 140px;
+}
+
+.send-button {
+    padding: 12px 38px;
+}
+
 
 .footer-contacts {
+    padding: 130px 105px 130px;
+
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
     
-    color: var(--text-secondary); 
+    color: var(--text-secondary);
 }
 
-address a {
+.contact-box {
+    margin-bottom: 70px;
+}
+address p {
+    display: flex;
+    align-items: baseline;
+    
     font-style: normal;
-}
-
-address a {
-    display: block;
-      
     color: var(--text-secondary); 
 }
 
+address a {
+    display: flex;
+    align-items: center;
+    
+    font-style: normal;
+    color: var(--text-secondary); 
+}
+
+.icon-map-pin, .icon-phone, .icon-mail {
+    margin-right: 16px;
+}
+
+.footer .suptitle-secondary {
+    color: #ffffff;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 125px;
+    height: auto;
+    padding: 0 55px;
+
+    background-color: #ffffff;
+}
