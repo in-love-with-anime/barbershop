@@ -63,7 +63,7 @@ img {
 
     width: 100%;
     padding: 30px 55px 0;
-    position: fixed;
+    /* position: fixed; */
     top: 0px;   
 
     box-sizing: border-box;
@@ -105,9 +105,9 @@ a.nav-link:hover, a.nav-link:focus {
     color: var(--primary-color);
 }
 
-.contact-box {
+/* .contact-box {
     
-}
+} */
 
 .primary-btn { 
     display: inline-block;
@@ -154,6 +154,9 @@ a.social-link:hover, a.social-link:focus {
 /* Слайдер */
 
 .suptitle-primary {
+    display: block;
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -164,6 +167,9 @@ a.social-link:hover, a.social-link:focus {
 }
 
 .suptitle-secondary {
+    display: block;
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -238,6 +244,9 @@ a.social-link:hover, a.social-link:focus {
 }
 
 h2.section-title {
+    margin-top: 0;
+    margin-bottom: 44px;
+
     font-family: Raleway;
     font-size: 42px;
     line-height: 1.16;
@@ -308,16 +317,16 @@ p.section-description {
 }
 
 /* .price-section .primary-btn {
-    display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-left: auto;
 } */
 
 /* Почему именно мы */
 
-.why-section {
-    /* display: flex;
-    justify-content: space-between; */
-}
+/* .why-section {
+     display: flex;
+    justify-content: space-between; 
+} */
 
 .number-container {
     display: flex;
@@ -451,14 +460,82 @@ p.section-description {
     background-position: right top;
 }
 
-.footer-form, .footer-contacts {
+.footer__form, .footer__contacts {
     width: 50%;
     height: inherit;
 }
 
 /* Форма Онлайн-записи */
-.footer-form {
+.footer__form {
     margin-right: 140px;
+}
+
+.form__label {
+    position: relative;
+    display: inline-block;
+    width: calc(50% - 15px);
+}
+
+.form__legend {
+    position: absolute;
+    top: 0;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
+
+    transition: translate .1s linear;
+}
+
+.form__label:focus .form__legend,
+.form__label:hover .form__legend {
+    color: #ffffff;
+    transform: translate(-2px, -24px);
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    outline: none;
+
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.form__input:not(:placeholder-shown) + .form__legend {
+    transform: translate(-2px, -24px);
+}
+
+.form__input:hover, .form__input:focus {
+    border-color: #ffffff;
+}
+
+.form__textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    outline: none;
+
+    background-color: transparent;
+}
+
+.form__textarea::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
 }
 
 .send-button {
@@ -466,7 +543,8 @@ p.section-description {
 }
 
 
-.footer-contacts {
+/* Контакты */
+.footer__contacts {
     padding: 130px 105px 130px;
 
     font-size: 18px;
