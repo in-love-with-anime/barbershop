@@ -1,0 +1,39 @@
+/* Уникальный контент страницы */
+
+.section-box {
+    padding: 130px 55px;
+
+    width: 100%;
+}
+
+/* О нас */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image-box {
+    display: flex;
+    justify-content: space-between;
+
+    width: 48%;
+}
+
+.about-image-box img{
+    width: 48%;
+}
+
+.description-container {
+    width: 48%;
+}
+
+p.section-description {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+
+    color: $text-primary-lighten;
+}
+
+

@@ -1,0 +1,67 @@
+.hero-title {
+    font-family: Raleway;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.suptitle-primary {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $text-primary;
+}
+
+.suptitle-secondary {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: rgba(157, 164, 189, 0.6); 
+}
+
+.suptitle-primary::before, 
+.suptitle-secondary::before {
+    display: inline-block;
+    content: '';
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+   
+        
+    background-color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-primary::before{
+    background-color: rgba(48, 48, 48, 1);
+}
+
+h2.section-title {
+    margin-top: 0;
+    margin-bottom: 44px;
+
+    font-family: Raleway;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    color: $text-primary;
+}
+
+h2.section-title.lighten {
+    color: #ffffff;
+}

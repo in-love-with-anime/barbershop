@@ -1,0 +1,18 @@
+//Base
+@import 'base/normalize';
+
+// Utils
+@import 'utils/variables';
+
+// Components
+@import 'components/titles';
+@import 'components/_buttons';
+
+// Layout
+@import 'layout/header';
+@import 'layout/about';
+@import 'layout/price';
+@import 'layout/why';
+@import 'layout/masters';
+@import 'layout/portfolio';
+@import 'layout/_footer';

@@ -1,0 +1,21 @@
+.primary-btn { 
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: transparent;
+
+    border: 1px solid $primary-color;
+    border-radius: 25px;
+}
+
+.primary-btn.darken {
+    color: $text-primary;
+}

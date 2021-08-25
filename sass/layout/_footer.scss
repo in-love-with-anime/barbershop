@@ -1,0 +1,154 @@
+/* Подвал страницы */
+.footer {
+    display: flex;
+
+    width: 100%;
+    min-height: 640px;
+    height: auto;
+    padding: 0 55px;
+
+    background-color: $secondary-color;
+    background-image: url('../images/footer-background.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.form__wrapper {
+    padding: 130px 40px 193px 0;
+    width: 50%;
+    height: inherit;
+}
+
+/* Форма Онлайн-записи */
+.footer__form {
+    width: 100%;
+    margin-right: 140px;
+}
+
+.form__label {
+    position: relative;
+    display: inline-block;
+    max-width: 265px;
+    width: calc(50% - 15px);
+    margin-bottom: 44px;
+}
+
+.form__legend {
+    position: absolute;
+    top: 0;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
+
+    transition: translate .1s linear;
+}
+
+.form__label:focus .form__legend,
+.form__label:hover .form__legend {
+    color: #ffffff;
+    transform: translate(-2px, -24px);
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    outline: none;
+
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.form__input:not(:placeholder-shown) + .form__legend {
+    transform: translate(-2px, -24px);
+}
+
+.form__input:hover, .form__input:focus {
+    border-color: #ffffff;
+}
+
+.form__textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    margin-bottom: 44px;
+
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    outline: none;
+
+    background-color: transparent;
+}
+
+.form__textarea::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
+}
+
+.send-button {
+    padding: 12px 38px;
+}
+
+
+/* Контакты */
+.footer__contacts {
+    padding: 130px 100px ;
+    width: 50%;
+    height: inherit;
+
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    
+    color: $text-secondary;
+}
+
+.contact-box {
+    margin-bottom: 70px;
+}
+address p {
+    display: flex;
+    align-items: baseline;
+    
+    font-style: normal;
+    color: $text-secondary; 
+}
+
+address a {
+    display: flex;
+    align-items: center;
+    
+    font-style: normal;
+    color: $text-secondary; 
+}
+
+.icon-map-pin, .icon-phone, .icon-mail {
+    margin-right: 16px;
+}
+
+.footer .suptitle-secondary {
+    color: #ffffff;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 125px;
+    height: auto;
+    padding: 0 55px;
+
+    background-color: #ffffff;
+}

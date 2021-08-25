@@ -5,68 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 
     <!-- Шапка сайта -->
     <header class="header">
 
-        <!-- Навигация -->
-        <nav class="navbar">
-            
-            <div class="nav-holder">
-                <svg class="logo-icon" wigth="68" height="56">
-                    <use href="./images/sprite.svg#icon-logo" alt="Имя компании"></use>
-                </svg>
-                <ul class="nav-links">
-                    <li><a href="#about-section" class="nav-link" >О нас</a></li>
-                    <li><a href="#price-section" class="nav-link" >Услуги и цены</a></li>
-                    <li><a href="#" class="nav-link" >Мастера</a></li>
-                    <li><a href="#" class="nav-link" >Контакты</a></li>
-                </ul>
-            </div>
+            <!-- Навигация -->
+            <nav class="navbar">
+                
+                <div class="nav-holder">
+                    <svg class="logo-icon" wigth="68" height="56">
+                        <use href="./images/sprite.svg#icon-logo" alt="Имя компании"></use>
+                    </svg>
+                    <ul class="nav-links">
+                        <li><a href="#about-section" class="nav-link" >О нас</a></li>
+                        <li><a href="#price-section" class="nav-link" >Услуги и цены</a></li>
+                        <li><a href="#" class="nav-link" >Мастера</a></li>
+                        <li><a href="#" class="nav-link" >Контакты</a></li>
+                    </ul>
+                </div>
 
-            <div class="contact-box">
-                <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
-                <a href="#footer" class="primary-btn">Онлайн запись</a>
-            </div>
+                <div class="contact-box">
+                    <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
+                    <a href="#footer" class="primary-btn">Онлайн запись</a>
+                </div>
 
-        </nav>
+            </nav>
 
-        <!-- Боковая панель -->
-        <aside class="sidebar">
-            <div class="social-box">
-                <a href="#" class="social-link">Instragram</a>
-                <a href="#" class="social-link">YouTube</a>
-            </div>
-        </aside>
+            <!-- Боковая панель -->
+            <aside class="sidebar">
+                <div class="social-box">
+                    <a href="#" class="social-link">Instragram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </aside>
 
-        <!-- Слайдер -->
-        <div class="slider">
-            <div class="slide">
-                <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
-                <h1 class="hero-title">BarberShop</h1>
-                <p class="hero-description">Мы эксперты в модных мужских стрижках. 
-                    Работаем быстро, осторожно и со вкусом.</p>
+            <!-- Слайдер -->
+            <div class="slider">
+                <div class="slide">
+                    <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-description">Мы эксперты в модных мужских стрижках. 
+                        Работаем быстро, осторожно и со вкусом.</p>
+                </div>
+                <div class="slide">
+                    <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-description">Мы эксперты в модных мужских стрижках. 
+                        Работаем быстро, осторожно и со вкусом.</p>
+                </div>
+                <div class="slide">
+                    <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-description">Мы эксперты в модных мужских стрижках. 
+                        Работаем быстро, осторожно и со вкусом.</p>
+                </div>
             </div>
-            <div class="slide">
-                <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
-                <h1 class="hero-title">BarberShop</h1>
-                <p class="hero-description">Мы эксперты в модных мужских стрижках. 
-                    Работаем быстро, осторожно и со вкусом.</p>
-            </div>
-            <div class="slide">
-                <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
-                <h1 class="hero-title">BarberShop</h1>
-                <p class="hero-description">Мы эксперты в модных мужских стрижках. 
-                    Работаем быстро, осторожно и со вкусом.</p>
-            </div>
-        </div>
-
+        
     </header>
 
     <!-- Уникальный контент страницы -->
@@ -307,8 +307,9 @@
 
     <!-- Футер -->
     <footer class="footer" id="footer">
-        <div>
+        <div class="form__wrapper">
             <h2 class="section-title lighten">Онлайн-запись</h2>
+            
             <form class="form footer__form">
                 <label class="form__label">
                     <input type="text" name="userName" class="form__input" required placeholder=" ">
@@ -316,7 +317,6 @@
                 </label>
                 
                 <label class="form__label">
-                    
                     <input type="tel" name="userPhone" class="form__input" required placeholder=" ">
                     <legend class="form__legend">Телефон*</legend>
                 </label>

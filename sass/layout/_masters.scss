@@ -1,0 +1,63 @@
+/* Наши мастера */
+.masters.section-box {
+    background-color: #F7F7F7;
+}
+
+.masters-list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 300px;
+}
+
+.masters-content {
+    padding: 30px 82px 0;
+    text-align: center;
+}
+
+.master-card p {
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.02em;
+
+    color: $text-primary;
+}
+
+.master-card span {
+    display: inline-block;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.357;
+    letter-spacing: 0.02em;
+    
+    color: $primary-color;
+}
+
+.master-social-box {
+    display: flex;
+    padding: 0;
+    margin: 0;    
+}
+
+.master-social-box .link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.master-social-box .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+     
+    fill: $text-primary;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.master-social-box .link:hover, .master-social-box .link:focus {
+    fill: $primary-color;
+}
