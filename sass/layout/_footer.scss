@@ -1,11 +1,10 @@
 /* Подвал страницы */
 .footer {
-    display: flex;
-
-    width: 100%;
     min-height: 640px;
     height: auto;
-    padding: 0 55px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: $secondary-color;
     background-image: url('../images/footer-background.png');
@@ -13,16 +12,20 @@
     background-position: right top;
 }
 
+.footer__wrapper {
+    display: flex;
+}
+
 .form__wrapper {
-    padding: 130px 40px 193px 0;
-    width: 50%;
+    margin-right: 140px;
+    width: 560px;
     height: inherit;
 }
 
 /* Форма Онлайн-записи */
 .footer__form {
+    margin-top: 44px;
     width: 100%;
-    margin-right: 140px;
 }
 
 .form__label {
@@ -103,8 +106,7 @@
 
 /* Контакты */
 .footer__contacts {
-    padding: 130px 100px ;
-    width: 50%;
+    width: 420px;
     height: inherit;
 
     font-size: 18px;

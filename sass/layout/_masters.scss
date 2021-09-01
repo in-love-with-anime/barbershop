@@ -1,20 +1,34 @@
 /* Наши мастера */
-.masters.section-box {
+.masters {
     background-color: #F7F7F7;
 }
 
-.masters-list {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 300px;
+.masters .container {
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        padding: 0 159px;
+    }
 }
 
-.masters-content {
-    padding: 30px 82px 0;
+.masters__list {
+    margin-top: 44px;
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+    }  
+}
+
+.masters__item:not(:last-child) {
+    @media screen and (max-width: 1279px) {
+        margin-bottom: 64px;
+    }
+}
+
+.masters__content {
+    padding-top: 30px;
     text-align: center;
 }
 
-.master-card p {
+.masters__name {
     margin-top: 0;
     margin-bottom: 8px;
 
@@ -25,7 +39,7 @@
     color: $text-primary;
 }
 
-.master-card span {
+.masters__position {
     display: inline-block;
     margin-bottom: 30px;
 
@@ -36,17 +50,18 @@
     color: $primary-color;
 }
 
-.master-social-box {
+// Cсылки на соцсети
+
+.masters__social-box {
     display: flex;
-    padding: 0;
-    margin: 0;    
+    justify-content: center;   
 }
 
-.master-social-box .link:not(:last-child) {
+.masters__link:not(:last-child) {
     margin-right: 10px;
 }
 
-.master-social-box .link {
+.masters__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +73,6 @@
     border-radius: 50%;
 }
 
-.master-social-box .link:hover, .master-social-box .link:focus {
+.masters__link:hover, .masters__link:focus {
     fill: $primary-color;
 }

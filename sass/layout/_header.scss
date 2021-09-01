@@ -73,21 +73,24 @@ a.nav-link:hover, a.nav-link:focus {
 
 
 /* Боковая панель */
-.sidebar {    
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 155px;
-    height: 100vh;
-
-    background-color: #ffffff;
-
-    .social-box {
-        display: flex;
-        align-items: center;
-        transform: rotate(-90deg) translateX(190px);
+.sidebar {   
+    @media screen and (max-width: 767px) { 
+        display: none;
     }
-}
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 155px;
+        height: 100vh;
+
+        background-color: #ffffff;
+
+        .social-box {
+            display: flex;
+            align-items: center;
+            transform: rotate(-90deg) translateX(190px);
+        }
+    }
 
 .social-box::before {
     display: inline-block;
@@ -138,7 +141,7 @@ a.social-link:hover, a.social-link:focus {
 
         h1.hero-title {
             color: #fff;
-            font-size: 10em;
+            // font-size: 10em;
             font-weight: bold;
             margin: 20px 0 20px -12px;
         }

@@ -1,10 +1,20 @@
 /* Портфолио */
-.portfolio.suptitle-primary {
+.portfolio__headline-primary {
     display: inline-block;
     margin-bottom: 44px;
 }
 
-.image-gallery {
-    display: flex;
-    justify-content: space-between;
+.portfolio__list  {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1280px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }

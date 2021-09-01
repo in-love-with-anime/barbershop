@@ -1,28 +1,101 @@
 /* Почему именно мы */
+.why__wrapper {
 
-/* .why-section {
-     display: flex;
-    justify-content: space-between; 
-} */
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    } 
+} 
 
-.number-container {
+.why__text-box {
+    @media screen and (max-width: 767px) {
+    max-width: 416px;
+    width: 100%;
+    }
+        @media screen and (min-width: 768px) {
+            margin-right: 70px;
+            width: 500px;
+        }
+
+        @media screen and (max-width: 1279px) {
+            margin-bottom: 53px;
+        }
+}
+
+.why__subtitle {
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+
+    color: $text-primary-lighten;
+}
+
+// Карточки достижений 
+
+.why__result {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 48%;
-    padding: 0 100px;
+    width: 416px;
+    height: 331px;
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+            margin-left: 239px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 100px;
+            width: 370px;
+        }
 }
 
-.number-box {
-    min-width: 170px;
-    width: 48%;
-    height: 132px;
-    margin-top: 30px;
+.why__number-box {
+    position: absolute;
+    text-align: center;
+    padding: 20px 33px;
+    width: 193px;
+    height: 133px;
     
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
+
+        @media screen and (min-width: 768px) {
+            padding: 20px 41px;
+            width: 210px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding: 20px 21px;
+            width: 170px;
+        }
 }
 
-.number-box p {
+
+.why__number-box-1 {
+    top: -9px;
+}
+
+.why__number-box-2 {
+    top: 154px;   
+}
+
+.why__number-box-3 {
+    top: 35px;
+    right: 0; 
+}
+
+.why__number-box-4 {
+    top: 198px;
+    right: 0; 
+}
+
+.why__number {
     display: block;
     text-align: center;
 
@@ -34,14 +107,21 @@
     color: $text-primary;
 }
 
-.number-box span {
-    display: block;
+.why__plus {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+
+
+    color: $primary-color;
+}
+
+.why__name {
     text-align: center;
 
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
-    letter-spacing: 0.02em;
 
     color: $text-primary;
 }
