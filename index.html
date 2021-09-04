@@ -16,57 +16,82 @@
     <!-- Шапка сайта -->
     <header class="header">
 
+        <div class="container">
+
             <!-- Навигация -->
-            <nav class="navbar">
-                
-                <div class="nav-holder">
-                    <svg class="logo-icon" width="68" height="56">
-                        <use href="./images/sprite.svg#icon-logo"></use>
+            <div class="header__wrapper">
+                <svg class="header__logo" width="68" height="56">
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+
+                <button class="mobile__button-open" data-modal-open>
+                    <svg class="" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-menu"></use>
                     </svg>
-                    <ul class="nav-links">
-                        <li><a href="#about-section" class="nav-link" >О нас</a></li>
-                        <li><a href="#price-section" class="nav-link" >Услуги и цены</a></li>
-                        <li><a href="#" class="nav-link" >Мастера</a></li>
-                        <li><a href="#" class="nav-link" >Контакты</a></li>
-                    </ul>
+                </button>
+
+                <div class="header__nav">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#about-section" class="nav__link" >О нас</a></li>
+                            <li class="nav__item"><a href="#price-section" class="nav__link" >Услуги и цены</a></li>
+                            <li class="nav__item"><a href="#masters-section" class="nav__link" >Мастера</a></li>
+                            <li class="nav__item"><a href="#footer" class="nav__link" >Контакты</a></li>
+                        </ul>
+                    </nav>
+        
+                    <div class="header__contacts">
+                        <a href="#footer" class="primary-btn header__primary-btn">Онлайн запись</a>
+                        <a href="tel:+380441111111" class="header__phone-link">+38 044 111 11 11</a>  
+                    </div>
                 </div>
+            </div>
 
-                <div class="contact-box">
-                    <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
-                    <a href="#footer" class="primary-btn">Онлайн запись</a>
+            <!-- Мобильное окно -->
+            <div class="mobile__backdrop is-hidden" data-modal>
+                <div class="mobile">
+                    <button class="mobile__button-close" aria-expanded="false" data-modal-close>
+                        <svg class="" width="40" height="40">
+                            <use href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+
+                  <!-- Мобильное меню  -->
+                    <nav class="mobile__nav">
+                        <ul class="mobile__nav-list">
+                            <li class="mobile__nav-item"><a href="#about-section" class="mobile__nav-link" >О нас</a></li>
+                            <li class="mobile__nav-item"><a href="#price-section" class="mobile__nav-link" >Услуги и цены</a></li>
+                            <li class="mobile__nav-item"><a href="#masters-section" class="mobile__nav-link" >Мастера</a></li>
+                            <li class="mobile__nav-item"><a href="#footer" class="mobile__nav-link" >Контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="mobile__contacts">
+                        <a href="tel:+380441111111" class="mobile__phone-link">+38 044 111 11 11</a>
+                        <a href="#footer" class="primary-btn primary-btn--darken">Онлайн-запись</a>
+                    </div>
+
+                    <div class="mobile__socials">
+                        <a href="#" class="mobile__social-link mobile__social-link--headline">Instragram</a>
+                        <a href="#" class="mobile__social-link">YouTube</a>
+                    </div>
                 </div>
-
-            </nav>
-
-            <!-- Боковая панель -->
-            <aside class="sidebar">
-                <div class="social-box">
-                    <a href="#" class="social-link">Instragram</a>
-                    <a href="#" class="social-link">YouTube</a>
-                </div>
-            </aside>
-
+            </div>
+            
             <!-- Слайдер -->
             <div class="slider">
-                <div class="slide">
-                    <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
-                    <h1 class="hero-title">BarberShop</h1>
-                    <p class="hero-description">Мы эксперты в модных мужских стрижках.<br> 
-                        Работаем быстро, осторожно и со вкусом.</p>
-                </div>
-                <!-- <div class="slide">
-                    <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
-                    <h1 class="hero-title">BarberShop</h1>
-                    <p class="hero-description">Мы эксперты в модных мужских стрижках. 
-                        Работаем быстро, осторожно и со вкусом.</p>
-                </div>
-                <div class="slide">
-                    <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
-                    <h1 class="hero-title">BarberShop</h1>
-                    <p class="hero-description">Мы эксперты в модных мужских стрижках. 
-                        Работаем быстро, осторожно и со вкусом.</p>
-                </div> -->
+                <span lang="en" class="headline hero__headline">A hair salon for men in Kyiv</span>
+                <h1 class="hero__title">BarberShop</h1>
+                <p class="hero__description">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
             </div>
+            
+            <!-- Боковая панель -->
+            <div class="header__socials">
+                <a href="#" class="header__social-link header__social-link--line">Instragram</a>
+                <a href="#" class="header__social-link">YouTube</a>
+            </div>
+
+        </div>
         
     </header>
 
@@ -95,13 +120,13 @@
                 </div>
                 
                 <div class="about__text-box">
-                    <span class="headline-primary">О нас</span>
+                    <span class="headline">О нас</span>
                     <h2 class="about__section-title section-title">Лучший Барбершоп<br>твоего города</h2>
                     <h3 class="about__subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
                     <p class="about__description">Мы команда, которая никогда не останавливается на достигнутом 
                         и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                    <a href="#footer" class="primary-btn darken">Онлайн запись</a>
+                    <a href="#footer" class="primary-btn--darken">Онлайн запись</a>
                 </div>
             </div>
             
@@ -111,8 +136,8 @@
         <section class="price section" id="price-section">
 
             <div class="container">
-                <span class="headline-secondary">Проведи время в компании лучших мастеров</span>
-                <h2 class="section-title section-title-lighten">Услуги и цены</h2>
+                <span class="headline price__headline">Проведи время в компании лучших мастеров</span>
+                <h2 class="section-title section-title--lighten">Услуги и цены</h2>
 
                 <div class="price__box">
                     
@@ -178,7 +203,7 @@
             <div class="why__wrapper container">
 
                 <div class="why__text-box">
-                    <span class="headline-primary">Cтарая традиционная школа</span>
+                    <span class="headline">Cтарая традиционная школа</span>
                     <h2 class="section-title ">Почему приходят<br>именно к нам?</h2>
                     <h3 class="why__subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</h3>
                 </div>
@@ -186,22 +211,22 @@
                 <div class="why__result">
 
                     <div class="why__number-box why__number-box-1">
-                        <p class="why__number">600<sup><small class="why__plus">+</small></sup></p>
+                        <p class="why__number">600<sup class="why__plus">+</sup></p>
                         <p class="why__name">Довольных клиентов в день</p>
                     </div>
     
                     <div class="why__number-box why__number-box-2">
-                        <p class="why__number">20<sup><small class="why__plus">+</small></sup></p>
+                        <p class="why__number">20<sup class="why__plus">+</sup></p>
                         <p class="why__name">Лучших мастеров Киева</p>
                     </div>
 
                     <div class="why__number-box why__number-box-3">
-                        <p class="why__number">50<sup><small class="why__plus">+</small></sup></p>
+                        <p class="why__number">50<sup class="why__plus">+</sup></p>
                         <p class="why__name">Наград за отличный сервис</p>
                     </div>
     
                     <div class="why__number-box why__number-box-4">
-                        <p class="why__number">100<sup><small class="why__plus">+</small></sup></p>
+                        <p class="why__number">100<sup class="why__plus">+</sup></p>
                         <p class="why__name">Подарков постоянным клиентам</p>
                     </div>
 
@@ -212,19 +237,19 @@
         </section>
 
         <!-- Наши мастера -->
-        <section class="masters section" id="masters">
+        <section class="masters section" id="masters-section">
             
             <div class="container">
 
-                <span class="headline-primary">Для настоящих ценителей атмосферы</span>
+                <span class="headline">Для настоящих ценителей атмосферы</span>
                 <h2 class="section-title">Наши мастера</h2>
 
                 <ul class="masters__list">
                     <li class="masters__item">
                         <picture class="masters__img">
-                            <source srcset="./images/masters/masters-mobile1.jpg 1x, ./images/masters/masters-tablet1@2x.jpg 2x" media="(max-width: 767px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/masters/masters-tablet1.jpg 1x, ./images/masters/masters-tablet1@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/masters/masters-desktop1.jpg 1x, ./images/masters/masters-desktop1@2x.jpg 2x" media="(min-width: 1280px)" sizes="33vw" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-mobile1.jpg 1x, ./images/masters/masters-mobile1@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-tablet1.jpg 1x, ./images/masters/masters-tablet1@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-desktop1.jpg 1x, ./images/masters/masters-desktop1@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg"/>
                             <img src="./images/masters/masters-mobile1.jpg" alt="Мастер бреет голову">
                         </picture>
                         
@@ -262,9 +287,9 @@
 
                     <li class="masters__item">
                         <picture class="masters__img">
-                            <source srcset="./images/masters/masters-mobile2.jpg 1x, ./images/masters/masters-tablet2@2x.jpg 2x" media="(max-width: 767px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/masters/masters-tablet2.jpg 1x, ./images/masters/masters-tablet2@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/masters/masters-desktop2.jpg 1x, ./images/masters/masters-desktop2@2x.jpg 2x" media="(min-width: 1280px)" sizes="33vw" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-mobile2.jpg 1x, ./images/masters/masters-mobile2@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-tablet2.jpg 1x, ./images/masters/masters-tablet2@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-desktop2.jpg 1x, ./images/masters/masters-desktop2@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg"/>
                             <img src="./images/masters/masters-mobile2.jpg" alt="Мастер осматривает волосы">
                         </picture>
                         
@@ -302,9 +327,9 @@
                     
                     <li class="masters__item">
                         <picture class="masters__img">
-                            <source srcset="./images/masters/masters-mobile3.jpg 1x, ./images/masters/masters-tablet3@2x.jpg 2x" media="(max-width: 767px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/masters/masters-tablet3.jpg 1x, ./images/masters/masters-tablet3@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/masters/masters-desktop3.jpg 1x, ./images/masters/masters-desktop3@2x.jpg 2x" media="(min-width: 1280px)" sizes="33vw" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-mobile3.jpg 1x, ./images/masters/masters-mobile3@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-tablet3.jpg 1x, ./images/masters/masters-tablet3@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" type="image/jpg"/>
+                            <source srcset="./images/masters/masters-desktop3.jpg 1x, ./images/masters/masters-desktop3@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg"/>
                             <img src="./images/masters/masters-mobile3.jpg" alt="Мастер стрижет челку">
                         </picture>
                         
@@ -350,38 +375,38 @@
             
             <div class="container">
 
-                <span class="portfolio__headline-primary headline-primary">На латинском языке “барба” означает “борода”</span>
+                <span class="portfolio__headline headline">На латинском языке “барба” означает “борода”</span>
 
                 <ul class="portfolio__list">
                     <li class="portfolio__item">
                         <picture class="portfolio__img">
-                            <source srcset="./images/portfolio/portfolio-mobile1.jpg 1x, ./images/portfolio/portfolio-tablet1@2x.jpg 2x" media="(max-width: 767px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-tablet1.jpg 1x, ./images/portfolio/portfolio-tablet1@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" sizes="50vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-desktop1.jpg 1x, ./images/portfolio/portfolio-desktop1@2x.jpg 2x" media="(min-width: 1280px)" sizes="25vw" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-mobile1.jpg 1x, ./images/portfolio/portfolio-mobile1@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-tablet1.jpg 1x, ./images/portfolio/portfolio-tablet1@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-desktop1.jpg 1x, ./images/portfolio/portfolio-desktop1@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg"/>
                             <img src="./images/portfolio/portfolio-mobile1.jpg" alt="Стрижка волос">
                         </picture>
                     </li>
                     <li class="portfolio__item">
                         <picture class="portfolio__img">
-                            <source srcset="./images/portfolio/portfolio-mobile2.jpg 1x, ./images/portfolio/portfolio-tablet2@2x.jpg 2x" media="(max-width: 767px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-tablet2.jpg 1x, ./images/portfolio/portfolio-tablet2@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" sizes="50vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-desktop2.jpg 1x, ./images/portfolio/portfolio-desktop2@2x.jpg 2x" media="(min-width: 1280px)" sizes="25vw" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-mobile2.jpg 1x, ./images/portfolio/portfolio-mobile2@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-tablet2.jpg 1x, ./images/portfolio/portfolio-tablet2@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-desktop2.jpg 1x, ./images/portfolio/portfolio-desktop2@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg"/>
                             <img src="./images/portfolio/portfolio-mobile2.jpg" alt="Бритье">
                         </picture>
                     </li>
                     <li class="portfolio__item">
                         <picture class="portfolio__img">
-                            <source srcset="./images/portfolio/portfolio-mobile3.jpg 1x, ./images/portfolio/portfolio-tablet3@2x.jpg 2x" media="(max-width: 767px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-tablet3.jpg 1x, ./images/portfolio/portfolio-tablet3@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" sizes="50vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-desktop3.jpg 1x, ./images/portfolio/portfolio-desktop3@2x.jpg 2x" media="(min-width: 1280px)"  sizes="25vw" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-mobile3.jpg 1x, ./images/portfolio/portfolio-mobile3@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-tablet3.jpg 1x, ./images/portfolio/portfolio-tablet3@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-desktop3.jpg 1x, ./images/portfolio/portfolio-desktop3@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg"/>
                             <img src="./images/portfolio/portfolio-mobile3.jpg" alt="Массаж тёплым полотенцем">
                         </picture>
                     </li>
                     <li class="portfolio__item">
                         <picture class="portfolio__img">
-                            <source srcset="./images/portfolio/portfolio-mobile4.jpg 1x, ./images/portfolio/portfolio-tablet4@2x.jpg 2x" media="(max-width: 767px)" sizes="100vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-tablet4.jpg 1x, ./images/portfolio/portfolio-tablet4@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" sizes="50vw" type="image/jpg"/>
-                            <source srcset="./images/portfolio/portfolio-desktop4.jpg 1x, ./images/portfolio/portfolio-desktop4@2x.jpg 2x" media="(min-width: 1280px)"  sizes="25vw" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-mobile4.jpg 1x, ./images/portfolio/portfolio-mobile4@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-tablet4.jpg 1x, ./images/portfolio/portfolio-tablet4@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)" type="image/jpg"/>
+                            <source srcset="./images/portfolio/portfolio-desktop4.jpg 1x, ./images/portfolio/portfolio-desktop4@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpg"/>
                             <img src="./images/portfolio/portfolio-mobile4.jpg" alt="Бритьё опасной бритвой">
                         </picture>
                     </li>
@@ -397,65 +422,93 @@
         
         <div class="footer__wrapper container">
             <div class="form__wrapper">
-                <h2 class="section-title section-title-lighten">Онлайн-запись</h2>
+                <h2 class="section-title section-title--lighten">Онлайн-запись</h2>
                 
                 <form class="form footer__form">
                     <label class="form__label">
                         <input type="text" name="userName" class="form__input" required placeholder=" ">
-                        <legend class="form__legend">Имя*</legend>
+                        <p class="form__name">Имя*</p>
                     </label>
                     
                     <label class="form__label">
                         <input type="tel" name="userPhone" class="form__input" required placeholder=" ">
-                        <legend class="form__legend">Телефон*</legend>
+                        <p class="form__name">Телефон*</p>
                     </label>
     
                     <textarea name="userMessage" class="form__textarea" cols="30" rows="4" placeholder="Сообщение"></textarea>
     
-                    <button type="submit" class="primary-btn send-button">Отправить</button>
+                    <button type="submit" class="primary-btn footer__send-button">Отправить</button>
                 </form>
             </div>
     
             <div class="footer__contacts">
-                <h2 class="section-title section-title-lighten">Контакты</h2>
+                <h2 class="section-title section-title--lighten">Контакты</h2>
     
-                <div class="contact-box">
-                    <address>
-                        <p>
-                            <svg class="icon-map-pin" width="24" height="24">
+                <div class="contacts">
+                    <address class="contacts__box">
+                        <p class="contacts__address contacts__address--mobile">
+                            <svg class="footer__icon" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-map-pin"></use>
                             </svg>
-                            ул. Васильковая, 7А<br>
+                            ул. Васильковая, 7А, Киев, 08132
+                        </p>
+                        <p class="contacts__address contacts__address--tablet">
+                            <svg class="footer__icon footer__icon--address" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-map-pin"></use>
+                            </svg>
+                            ул. Васильковая, 7А<br> 
                             Киев, 08132
                         </p>
-                        <a href="tel:+380441111111">
-                            <svg class="icon-phone" width="24" height="24">
+                        <a class="contacts__link" href="tel:+380441111111">
+                            <svg class="footer__icon" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-phone"></use>
                             </svg> 
                             +38 044 111 11 11</a>
-                        <a href="mailto:barbershop@email.com">
-                            <svg class="icon-mail" width="24" height="24">
+                        <a class="contacts__link contacts__link--mail" href="mailto:barbershop@email.com">
+                            <svg class="footer__icon" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-mail"></use>
                             </svg>
                             barbershop@email.com</a>
                     </address>
+        
+                    <div class="schedule__box">
+                        <span class="headline footer__headline">Время работы</span>
+                        <p>Ежедневно с 9:00 до 22:00</p>
+                    </div>
                 </div>
-    
-                <div class="schedule-box">
-                    <span class="suptitle-secondary">Время работы</span>
-                    <p>Ежедневно с 9:00 до 22:00</p>
-                </div>
+
             </div>
         </div>
 
     </footer>
 
     <div class="copyright">
-        <p class="copy-text">&copy; Copyright <span>2020</span></p>
-        <div class="social-box">
-            <a href="#" class="social-link">Instragram</a>
-            <a href="#" class="social-link">YouTube</a>
+        
+        <div class="copyright__wrapper container">
+            <p class="copyright__text">&copy; Copyright 2020</p>
+
+            <div class="copyright__socials">
+                <a href="#" class="copyright__link">Instagram</a>
+                <a href="#" class="copyright__link">YouTube</a>
+            </div>
         </div>
+
     </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"> 
+    </script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

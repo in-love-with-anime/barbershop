@@ -1,4 +1,4 @@
-.hero-title {
+.hero__title {
     font-family: Raleway;
     font-size: 48px;
     line-height: 1.16;
@@ -12,7 +12,7 @@
     }
 }
 
-.headline-primary {
+.headline{
     display: block;
     margin-bottom: 20px;
 
@@ -23,53 +23,28 @@
     text-transform: uppercase;
 
     color: $text-primary;
-}
 
-.headline-secondary {
-    display: block;
-    margin-bottom: 20px;
-
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    &::before {
+        display: inline-block;
+        content: '';
+        margin-right: 20px;
+        width: 60px;
+        height: 1px;
+        vertical-align: middle;
     
-    color: rgba(157, 164, 189, 0.6); 
-}
-
-.headline-secondary::before {
-    display: inline-block;
-    content: '';
-    margin-right: 20px;
-    width: 60px;
-    height: 1px;
-    vertical-align: middle;
-   
-        
-    background-color: rgba(157, 164, 189, 0.6);
-}
-
-.headline-primary::before {
-    display: inline-block;
-    content: '';
-    margin-right: 20px;
-    width: 60px;
-    height: 1px;
-    vertical-align: middle;
-
-    background-color: rgba(48, 48, 48, 1);
+        background-color: rgba(48, 48, 48, 1);
+    }
 }
 
 .section-title {
     font-family: Raleway;
     font-size: 42px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.05em;
 
     color: $text-primary;
 }
 
-.section-title-lighten {
+.section-title--lighten {
     color: $text-white;
 }

@@ -8,12 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 400;
-}
-
 h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
@@ -30,7 +24,8 @@ a {
 }
 
 input, button, textarea {
-  font-family: inherit;
+    font-family: inherit;
+    padding: 0;
 }
 
 button {
@@ -41,4 +36,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 400;
 }

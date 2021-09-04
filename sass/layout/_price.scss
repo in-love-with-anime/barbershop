@@ -48,6 +48,14 @@
     }
 }
 
+.price__headline {
+    color: rgba(157, 164, 189, 0.6); 
+}
+
+.price__headline::before {
+    background-color: rgba(157, 164, 189, 0.6);
+}
+
 .price__box {
     margin-top: 44px;
     margin-bottom: 50px;
