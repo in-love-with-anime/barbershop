@@ -69,21 +69,23 @@
 //Навигация
 .header__wrapper {
     display: flex;
-    
-    width: 100vw;
-    position: fixed;
-    top: 40px;
-    z-index: 10;
 
-    &.fixed-nav {
-        right: 0;
-        justify-content: center;
-        background-color: rgba(25, 28, 38, 0.9);
-        padding: 30px 0;
-        
-        
-        .header__logo {
-            fill: $text-white;
+    @media screen and (min-width: 768px) {
+        width: 100vw;
+        position: fixed;
+        top: 40px;
+        z-index: 10;
+
+        &.fixed-nav {
+            right: 0;
+            justify-content: center;
+            background-color: rgba(25, 28, 38, 0.9);
+            padding: 30px 0;
+            
+            
+            .header__logo {
+                fill: $text-white;
+            }
         }
     }
 }
@@ -104,7 +106,7 @@
 // Слайдер
 .slider {
     @media screen and (min-width: 768px) {
-        margin-top: 156px;
+        margin-top: 230px;
         margin-left: 240px;
     }
     @media screen and (min-width: 1280px) {
@@ -182,7 +184,6 @@
 
     max-width: 337px;
     width: 100vw;
-    max-height: 796px;
     height: 100vh;
 
     padding: 118px 20px 40px 40px;
@@ -342,10 +343,10 @@
     @media screen and (min-width: 768px) {
         display: flex;
         
-        transform: rotate(-90deg) translate(190px, -290px);
+        transform: rotate(-90deg) translate(144px, -290px);
     }
     @media screen and (min-width: 1280px) {
-        transform: rotate(-90deg) translate(420px, -550px);
+        transform: rotate(-90deg) translate(370px, -550px);
     }
 
 }

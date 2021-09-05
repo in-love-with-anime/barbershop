@@ -323,6 +323,18 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .copyright__socials {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    .copyright__link {
+        margin-bottom: 15px;
+    }
+}
+
 .copyright__link {
     font-style: normal;
     font-weight: 600;
@@ -333,7 +345,11 @@
     color: $text-primary;
 
     &:first-child {
-        margin-right: 40px;
+        margin-top: 15px;
+        @media screen and (min-width: 451px) {
+            margin-right: 40px;
+            margin-top: 0;
+        }
     }
 
     &:hover, &:focus {
