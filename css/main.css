@@ -228,6 +228,10 @@ body {
 }
 
 .header__wrapper.fixed-nav {
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: rgba(25, 28, 38, 0.9);
   padding: 30px 0;
 }
