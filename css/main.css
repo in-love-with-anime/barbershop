@@ -169,6 +169,7 @@ body {
 
 /* Шапка сайта */
 .header {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   padding: 40px 0;
@@ -221,6 +222,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
+  position: fixed;
+  top: 40px;
+  z-index: 10;
+}
+
+.header__wrapper.fixed-nav {
+  background-color: rgba(25, 28, 38, 0.9);
+  padding: 30px 0;
+}
+
+.header__wrapper.fixed-nav .header__logo {
+  fill: #ffffff;
 }
 
 .header__logo {
