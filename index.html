@@ -24,7 +24,7 @@
                     <use href="./images/sprite.svg#icon-logo"></use>
                 </svg>
 
-                <button class="mobile__button-open" data-modal-open>
+                <button class="mobile__button-open" aria-label="Открывает мобильное меню" data-modal-open>
                     <svg class="" width="40" height="40">
                         <use href="./images/sprite.svg#icon-menu"></use>
                     </svg>
@@ -49,16 +49,16 @@
             </div>
 
             <!-- Мобильное окно -->
-            <div class="mobile__backdrop is-hidden" data-modal>
+            <div class="mobile__backdrop is-hidden" data-modal data-menu>
                 <div class="mobile">
-                    <button class="mobile__button-close" aria-expanded="false" data-modal-close>
+                    <button class="mobile__button-close" aria-expanded="false" aria-label="Закрывает мобильное меню" data-modal-close>
                         <svg class="" width="40" height="40">
                             <use href="./images/sprite.svg#icon-close"></use>
                         </svg>
                     </button>
 
                   <!-- Мобильное меню  -->
-                    <nav class="mobile__nav">
+                    <nav class="mobile__nav" data-menu-link>
                         <ul class="mobile__nav-list">
                             <li class="mobile__nav-item"><a href="#about-section" class="mobile__nav-link" >О нас</a></li>
                             <li class="mobile__nav-item"><a href="#price-section" class="mobile__nav-link" >Услуги и цены</a></li>
